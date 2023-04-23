@@ -4,17 +4,19 @@ function mrtesh_help_exec() {
 
   mrtesh_help_exec_head
 
+  #markup:"--|-|---------|-------|-------|---------------------------------------|"
   echo -e "${CC_GREEN}${MRTESH_INFO_CAPTION}${CC_END} is a tool for testing shell tools, scripts, etc."
   echo ""
   echo -e "${CC_YELLOW}Usage:${CC_END}"
-  echo -e "  [${CC_BLUE}options${CC_END}] <${CC_GREEN}command${CC_END}> [arguments]"
+  echo -e "  [${CC_BLUE}options${CC_END}] <${CC_GREEN}COMMAND${CC_END}> [arguments]"
   echo ""
   echo -e "${CC_YELLOW}Miscellaneous:${CC_END}"
-  echo -e "  ${CC_BLUE}-d | --tests-dir${CC_END}  Set tests dir for testing"
-  echo -e "  ${CC_BLUE}--debug${CC_END} <level>   Enable debugging mode, level: 1-4"
-  echo -e "  ${CC_BLUE}-n | --no-color${CC_END}   Disable colored output"
-  echo -e "  ${CC_BLUE}-V | --verbose${CC_END}    Explain what is being done"
-  echo -e "  ${CC_BLUE}-v | --version${CC_END}    Display version information and exit"
+  echo -e "  ${CC_BLUE}-d, --tests-dir${CC_END}  Set tests dir for testing"
+  echo -e "  ${CC_BLUE}    --debug${CC_END} ${CC_CYAN}LEVEL${CC_END}        Enable debugging mode"
+  echo -e "                           ${CC_CYAN}LEVEL${CC_END} is 1, 2, 3, or 4"
+  echo -e "  ${CC_BLUE}-n, --no-color${CC_END}           Produce monochrome output"
+  echo -e "  ${CC_BLUE}-V, --verbose${CC_END}            Explain what is being done"
+  echo -e "  ${CC_BLUE}-v, --version${CC_END}            Display version information and exit"
   echo ""
 }
 
