@@ -40,7 +40,7 @@ function mrtesh_main_parse_args() {
 
       -d | --tests-dir)
         if [[ -z "${2-}" ]]; then
-          echo "-d --tests-dir value: dir in $(realpath "${APPX_DIR}")/"
+          echo "-d --tests-dir value: dir in ${APPX_DIR_REAL}/"
           exit 1
         fi
 
@@ -70,7 +70,7 @@ function mrtesh_main_init() {
 
 # private
 function mrtesh_main_init_paths() {
-  mrcore_debug_echo ${DEBUG_LEVEL_2} "${DEBUG_GREEN}" "Current run path: $(realpath "${APPX_DIR}")"
+  mrcore_debug_echo ${DEBUG_LEVEL_2} "${DEBUG_GREEN}" "Current run path: ${APPX_DIR_REAL}"
 
   if [ -n "${APPX_TESTS_DIR}" ]; then
     APPX_TESTS_DIR="${APPX_DIR}/${APPX_TESTS_DIR}"

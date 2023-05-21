@@ -4,6 +4,7 @@
 
 readonly MRTESH_DIR=$(realpath "${BASH_SOURCE[0]}" | xargs dirname)
 readonly APPX_DIR="."
+readonly APPX_DIR_REAL=$(realpath "${APPX_DIR}")
 
 source "${MRTESH_DIR}/src/core/bash.sh"
 source "${MRTESH_DIR}/src/core/colors.sh"
