@@ -6,8 +6,8 @@
 
 ## Быстрый старт
 > Для Windows два пути использования утилиты:
-> - `WSL2` - инструкция по установке находится [здесь](https://github.com/mondegor/mrcmd/blob/master/docs/WIN_WSL_DOCKER_GUIDE.md);
-> - `GitBash` - скачать можно [здесь](https://git-scm.com/download/win);
+> - WSL2 - инструкция по установке находится [здесь](https://github.com/mondegor/mrcmd/blob/master/docs/WIN_WSL_DOCKER_GUIDE.md);
+> - GitBash - скачать можно [здесь](https://git-scm.com/download/win);
 
 ### Инсталляция утилиты
 - Выбрать рабочую директорию, где должна быть расположена утилита;
