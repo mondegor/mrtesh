@@ -77,8 +77,6 @@ function mrtesh_main_init_paths() {
   else
     APPX_TESTS_DIR="${APPX_DIR}/tests"
   fi
-
-  mrcore_validate_dir_required "${MRTESH_INFO_CAPTION} directory for tests" "${APPX_TESTS_DIR}"
 }
 
 # private
@@ -86,6 +84,7 @@ function mrtesh_main_exec {
   local currentCommand=${1-}
 
   if [ -z "${currentCommand}" ]; then
+    mrcore_validate_dir_required "${MRTESH_INFO_CAPTION} directory for tests" "${APPX_TESTS_DIR}"
     mrtesh_test_exec "$@"
     exit 0
   fi

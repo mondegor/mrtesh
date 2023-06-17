@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# export PATH="/d/mrwork/mrtesh:${PATH}"
-# chmod +x ./mrtesh
+# chmod +x ./test.sh
 
 readonly MRTESH_DIR=$(realpath "${BASH_SOURCE[0]}" | xargs dirname)
 readonly APPX_DIR="."

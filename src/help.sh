@@ -5,7 +5,7 @@ function mrtesh_help_exec() {
   mrtesh_help_exec_head
 
   #markup:"--|-|---------|-------|-------|---------------------------------------|"
-  echo -e "${CC_GREEN}${MRTESH_INFO_CAPTION}${CC_END} is a tool for testing shell tools, scripts, etc."
+  echo -e "${CC_GREEN}${MRTESH_INFO_CAPTION}${CC_END} is a tool for testing Mrcmd bash scripts."
   echo ""
   echo -e "${CC_YELLOW}Usage:${CC_END}"
   echo -e "  [${CC_BLUE}options${CC_END}] <${CC_GREEN}COMMAND${CC_END}> [arguments]"
