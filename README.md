@@ -23,7 +23,7 @@
 - компонент `Isolated Area`, который поочерёдно передаёт управление тестовым скриптам изолируя их от самой утилиты и друг от друга;
 - контроллер, который, используя ядро, обрабатывает внешние команды и перенаправляет их в компонент `Isolated Area`;
 
-<img src="https://github.com/mondegor/mrcmd/blob/master/docs/img/mrtesh-architecture.png" width="539">
+<img src="https://github.com/mondegor/mrtesh/blob/master/docs/img/mrtesh-architecture.png" width="539">
 
 ## Сопутствующие проекты
 - [Mrcmd Tool для группировки и запуска unix команд и консольных скриптов](https://github.com/mondegor/mrcmd)
