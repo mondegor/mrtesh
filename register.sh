@@ -2,7 +2,7 @@
 # chmod +x ./register.sh
 # Registration of Mrtesh Tool for Linux
 
-if [ "$EUID" -ne 0 ]; then
+if [[ "$EUID" -ne 0 ]]; then
   echo "Please run as root"
   exit
 fi

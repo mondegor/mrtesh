@@ -39,7 +39,7 @@ function mrtesh_main_parse_args() {
         ;;
 
       -d | --tests-dir)
-        if [[ -z "${2-}" ]]; then
+        if [ -z "${2-}" ]; then
           echo "-d --tests-dir value: dir in ${APPX_DIR_REAL}/"
           exit 1
         fi
@@ -49,7 +49,7 @@ function mrtesh_main_parse_args() {
         ;;
 
       *)
-        if [[ -z "${1-}" ]]; then
+        if [ -z "${1-}" ]; then
           return
         fi
 

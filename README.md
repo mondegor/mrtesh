@@ -1,4 +1,4 @@
-# Mrtesh Tool v0.3.1
+# Mrtesh Tool v0.3.2
 Этот репозиторий содержит Mrtesh Tool для тестирования bash скриптов разработанных на ядре Mrcmd.
 
 ## Статус проекта
@@ -11,14 +11,15 @@
 
 ### Инсталляция утилиты
 - Выбрать рабочую директорию, где должна быть расположена утилита;
-- `curl -L -o mrtesh.zip https://github.com/mondegor/mrtesh/archive/refs/tags/latest.zip`
-- `unzip mrtesh.zip && rm mrtesh.zip && mv mrtesh-latest mrtesh && chmod +x ./mrtesh/test.sh`
+- `curl -L -o mrtesh.zip https://github.com/mondegor/mrtesh/archive/refs/tags/v0.3.2.zip`
+- `unzip mrtesh.zip && rm mrtesh.zip && mv mrtesh-0.3.2 mrtesh && chmod +x ./mrtesh/test.sh`
 - Для Linux, WSL: `sudo bash ./mrtesh/register.sh`
 - Для Windows: `register.bat` // ВНИМАНИЕ: запускать из PowerShell или проводника под админом
 - `mrtesh help` // проверить, что утилита была установлена
 
 ## Описание проекта
-**Mrtesh Tool** - утилита, написанная на языке bash в строгой нотации. Позволяет тестировать bash скрипты разработанные на ядре Mrcmd. Её архитектура состоит из следующих компонентов:
+**Mrtesh Tool** - утилита, написанная на языке bash в строгой нотации. Позволяет тестировать
+  bash скрипты разработанные на ядре Mrcmd. Её архитектура состоит из следующих компонентов:
 - ядро утилиты основанное на ядре Mrcmd;
 - компонент `Isolated Area`, который поочерёдно передаёт управление тестовым скриптам изолируя их от самой утилиты и друг от друга;
 - контроллер, который, используя ядро, обрабатывает внешние команды и перенаправляет их в компонент `Isolated Area`;

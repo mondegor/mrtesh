@@ -34,7 +34,7 @@ function mrtesh_test_exec() {
 
     echo -en "${i}. ${CC_BLUE}${testFilePath}${CC_END}"
 
-    if [ "${#MRTESH_RESULT_FUNCTIONS[@]}" -eq 0 ]; then
+    if [[ "${#MRTESH_RESULT_FUNCTIONS[@]}" -eq 0 ]]; then
       assertionsCount=$((assertionsCount + 1))
       echo -e " [${CC_YELLOW}tests not found${CC_END}]"
       continue
