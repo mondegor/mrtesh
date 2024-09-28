@@ -1,6 +1,10 @@
 # Mrtesh Tool Changelog
 Все изменения в Mrtesh будут документироваться на этой странице.
 
+## 2024-09-28
+### Changed
+- Поправлен `.editorconfig`, добавлены `*.proto`, `*.mk`;
+
 ## 2024-06-30
 ### Changed
 - Обновление README.md;
